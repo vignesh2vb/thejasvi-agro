@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 import { ShoppingCart, Minus, Plus } from "lucide-react";
 import OrderModal from "./OrderModal";
 
-import imgCoconutOil from "@/assets/product-coconut-oil.jpg";
-import imgGhee from "@/assets/product-ghee.jpg";
-import imgPaneer from "@/assets/product-paneer.jpg";
-import imgCurd from "@/assets/product-curd.jpg";
-import imgKhova from "@/assets/product-khova.jpg";
-import imgCoconut from "@/assets/product-coconut.jpg";
+import imgCoconutOil from "../assets/product-coconut-oil.jpg";
+import imgGhee from "../assets/product-ghee.jpg";
+import imgPaneer from "../assets/product-paneer.jpg";
+import imgCurd from "../assets/product-curd.jpg";
+import imgKhova from "../assets/product-khova.jpg";
+import imgCoconut from "../assets/product-coconut.jpg";
 
 export interface Product {
   name: string;

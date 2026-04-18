@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import heroBanner from "@/assets/hero-banner.jpg";
+import heroBanner from "../assets/hero-banner.jpg";
 
 export default function HeroSection() {
   return (
