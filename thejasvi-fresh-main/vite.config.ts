@@ -6,4 +6,14 @@
 // You can pass additional config via defineConfig({ vite: { ... } }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
-export default defineConfig();
+export default defineConfig({
+  vite: {
+    ssr: {
+      noExternal: ['@tanstack/react-start', '@tanstack/react-router', '@tanstack/react-query', '@tanstack/router-plugin']
+    },
+    build: {
+      outDir: 'dist',
+      ssr: 'src/entry.server.tsx'
+    }
+  }
+});
