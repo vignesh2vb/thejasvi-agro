@@ -70,11 +70,19 @@ function ProductCard({ product }: { product: Product }) {
           {product.priceNum && (
             <div className="mt-3 flex items-center gap-3">
               <div className="flex items-center gap-2 rounded-lg border border-border bg-background px-2 py-1">
-                <button onClick={() => setQty(Math.max(1, qty - 1))} className="text-muted-foreground hover:text-foreground p-0.5">
+                <button 
+                  type="button"
+                  onClick={() => setQty(Math.max(1, qty - 1))} 
+                  className="text-muted-foreground hover:text-foreground p-0.5 cursor-pointer"
+                >
                   <Minus className="h-4 w-4" />
                 </button>
                 <span className="w-6 text-center text-sm font-semibold">{qty}</span>
-                <button onClick={() => setQty(qty + 1)} className="text-muted-foreground hover:text-foreground p-0.5">
+                <button 
+                  type="button"
+                  onClick={() => setQty(qty + 1)} 
+                  className="text-muted-foreground hover:text-foreground p-0.5 cursor-pointer"
+                >
                   <Plus className="h-4 w-4" />
                 </button>
               </div>
