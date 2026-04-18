@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-    "build:ssr": "vite build --ssr src/entry.server.tsx",
     "preview": "vite preview",
     "lint": "eslint ."
   },
