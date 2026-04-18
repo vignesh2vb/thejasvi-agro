@@ -9,7 +9,7 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 export default defineConfig({
   vite: {
     ssr: {
-      noExternal: ['@tanstack/react-start', '@tanstack/react-router', '@tanstack/react-query', '@tanstack/router-plugin']
+      noExternal: process.env.NODE_ENV === 'production' ? true : ['@tanstack/react-start', '@tanstack/react-router', '@tanstack/react-query', '@tanstack/router-plugin']
     },
     build: {
       outDir: 'dist',

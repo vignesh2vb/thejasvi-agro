@@ -5,4 +5,4 @@ import React from 'react'
 
 const router = getRouter()
 
-hydrateRoot(document.getElementById('app')!, <StartClient router={router} />)
+hydrateRoot(document, <StartClient router={router} />)
